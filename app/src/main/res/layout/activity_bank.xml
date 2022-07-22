@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backscreen"
+    tools:context=".Bank">
+
+    <ImageView
+        android:id="@+id/bank_i"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+
+        android:background="@drawable/bank" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+      android:layout_marginStart="60dp"
+        android:background="@drawable/bgbtn"
+        android:text="BANK"
+        android:layout_marginTop="15dp"
+        android:id="@+id/t_bank"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t_bank"
+        android:text="Saved Account"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        android:layout_marginStart="10dp"
+        android:id="@+id/t_saved"
+        />
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_saved"
+        android:id="@+id/r_one"
+
+
+        >
+    <View
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/cardtwo"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="Savings Account Balance "
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="25dp"
+            android:id="@+id/t_saving"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Savings A/C No: XXXXXXXXX6622 "
+            android:layout_marginTop="0dp"
+            android:layout_below="@id/t_saving"
+            android:layout_marginStart="28dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:id="@+id/t_accNo"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="Primary Account "
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/t_accNo"
+            android:textColor="	#90EE90"
+            android:textStyle="bold"
+            android:id="@+id/t_primary"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Blance"
+            android:layout_below="@id/t_primary"
+            android:textSize="27sp"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#D4AF37"
+            android:textStyle="bold"
+            android:background="@drawable/bgbtn"
+            android:paddingHorizontal="2dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="40dp"
+
+
+
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r_one"
+        android:id="@+id/r_two"
+
+
+        >
+        <View
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/cardthree"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="Savings Account Balance "
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="25dp"
+            android:id="@+id/t_savingone"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Savings A/C No: XXXXXXXXX6622 "
+            android:layout_marginTop="0dp"
+            android:layout_below="@id/t_savingone"
+            android:layout_marginStart="28dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:id="@+id/t_accNo1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="Secondary Account "
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/t_accNo1"
+            android:textColor="	#90EE90"
+            android:textStyle="bold"
+            android:id="@+id/t_primary1"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Blance"
+            android:layout_below="@id/t_primary1"
+            android:textSize="27sp"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#D4AF37"
+            android:textStyle="bold"
+            android:background="@drawable/bgbtn"
+            android:paddingHorizontal="2dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="40dp"
+
+
+
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

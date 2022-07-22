@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DTH">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="7dp"
+                app:cardCornerRadius="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:orientation="horizontal">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/textInputDTHid"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:passwordToggleEnabled="true"
+
+                            android:layout_marginTop="10dp">
+                            <EditText
+                                android:id="@+id/et_mobilenum"
+                                style="@style/modifiedEditText"
+                                android:hint="@string/dth_hint"
+                                android:maxLines="1"
+                                android:textSize="30dp"
+                                android:imeOptions="actionUnspecified"
+                                android:inputType="number"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <ImageView
+                            android:id="@+id/img_dth_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_contact"
+                            android:visibility="gone"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="20dp"/>
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btn_dthrecharge1"
+                        android:background="@drawable/button"
+                        android:textColor="#FFF"
+                        android:visibility="gone"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10sp"
+                        android:paddingRight="10sp"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Recharge"
+                        android:drawableRight="@drawable/ic_next"
+                        android:layout_marginBottom="20dp"
+                        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_travells_hotels_and_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="7dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:textSize="20dp"
+                android:text="@string/txt_recent"
+                android:textColor="#000"
+                android:textStyle="italic|bold"
+                android:layout_marginLeft="10dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="7dp"
+                app:cardCornerRadius="7dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recentDthRecharge"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

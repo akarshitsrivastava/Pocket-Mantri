@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frag.PostpaidFrag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/editTextPhone4"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Enter Postpaid Mobile No"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/editTextPhone4"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/contacts"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/i_contact"
+        />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bgbtnone"
+            android:text="Proceed To Recharge"
+            android:paddingHorizontal="10dp"
+            android:id="@+id/proceed_recharge"
+            android:layout_below="@+id/i_contact"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/proceed_recharge"
+            android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:text="Recents"
+            android:textColor="#fff"
+            android:id="@+id/recentsrecharge"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:background="#000"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recentsrecharge"
+            android:layout_marginTop="5dp"
+
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/recy_recentrecharge"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+</FrameLayout>

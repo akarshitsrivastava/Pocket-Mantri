@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".uidashboard">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/vbg" />
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/circle" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleone"
+        android:layout_width="52dp"
+        android:layout_height="56dp"
+
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="41dp"
+         />
+    <ImageView
+        android:id="@+id/scanner"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/scanner" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rewardblue"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:id="@+id/rewadscard"
+        />
+
+    <TextView
+        android:id="@+id/comname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="32dp"
+
+        android:textColor="#FFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+
+        android:textColor="#FFF"
+        android:textSize="20sp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="vertical"
+        android:id="@+id/homewallet"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/homewalletbuttons">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/homebutton"
+
+                    />
+
+                <TextView
+                    android:id="@+id/hometab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOME"
+                    android:textColor="#172646"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/walletlayout"
+                >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/wallet"
+
+                    />
+
+                <TextView
+                    android:id="@+id/WALLET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WALLET"
+                    android:textColor="#172646"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/notification"
+                    android:id="@+id/notification"
+
+                    />
+
+                <TextView
+                    android:id="@+id/NOTIFICATION"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOTIFY"
+                    android:textColor="#172646"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/reward"
+                    android:id="@+id/reward_add"
+
+                    />
+
+                <TextView
+                    android:id="@+id/REWARDS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rewards"
+                    android:textColor="#172646"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/homewallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/innerlayout"
+            >
+
+            <ImageView
+                android:id="@+id/guide"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="8dp"
+
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/guide"
+
+                />
+
+            <TextView
+                android:id="@+id/textguide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/guide"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:text="Need a Guide?"
+                android:textColor="#172646"
+                android:textSize="22sp"
+
+                />
+
+            <Button
+                android:id="@+id/guidebtn"
+                android:layout_width="194dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textguide"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/bgbtn"
+                android:text="Guide Me"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/innertwo"
+            android:visibility="gone"
+            >
+            <include
+                layout="@layout/recharge_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></include>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/innerthree"
+            android:visibility="gone"
+            >
+            <include
+                layout="@layout/wallet_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></include>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/innerfour"
+            android:visibility="gone"
+            >
+            <include
+                layout="@layout/notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></include>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/innerfive"
+            android:visibility="gone"
+            >
+            <include
+                layout="@layout/reward_addmoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></include>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+

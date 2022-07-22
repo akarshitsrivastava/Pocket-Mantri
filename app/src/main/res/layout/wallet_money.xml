@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Money to Wallet"
+            android:layout_marginTop="30dp"
+
+            android:textColor="#000000"
+            android:layout_marginStart="20dp"
+
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:background="@drawable/addmoneyanime"
+            android:layout_marginTop="-8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+
+
+            />
+
+        <View
+        android:layout_width="380dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/viewone"
+        android:layout_centerHorizontal="true"
+
+
+        />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/backfours"
+            android:layout_marginTop="90dp"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wallet Balance"
+        android:textSize="20sp"
+        android:layout_marginTop="130dp"
+        android:layout_marginStart="50dp"
+        android:textColor="#4A4D67"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="₹ 80,660.21"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="160dp"
+        android:layout_marginStart="50dp"
+        android:textColor="#4A4D67"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spent Today"
+        android:textSize="20sp"
+        android:layout_marginTop="210dp"
+        android:layout_marginStart="50dp"
+        android:textColor="#4A4D67"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="₹ -399.23"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="240dp"
+        android:layout_marginStart="50dp"
+        android:textColor="#4A4D67"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Active Cards"
+        android:singleLine="true"
+        android:textSize="20sp"
+        android:layout_marginTop="210dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:textColor="#4A4D67"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="240dp"
+        android:layout_marginStart="280dp"
+        android:textColor="#4A4D67"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Cards"
+        android:layout_below="@+id/viewone"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:textSize="22sp"
+        android:layout_marginStart="40dp"
+        />
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/addnew"
+        android:layout_below="@+id/viewone"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentEnd="true"
+        />
+
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/cardone"
+        android:layout_below="@+id/viewone"
+        />
+    <View
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/cardtwo"
+        android:layout_below="@+id/viewone"
+        />
+    <View
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/cardthree"
+        android:layout_below="@+id/viewone"
+
+        />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/viewone"
+        android:background="@drawable/finalexpress"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="55dp"
+        />
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/viewone"
+        android:background="@drawable/visa"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="210dp"
+        />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/viewone"
+        android:background="@drawable/mastercard"
+        android:layout_marginTop="115dp"
+        android:layout_marginStart="125dp"
+        />
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>
